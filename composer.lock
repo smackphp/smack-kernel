@@ -1,0 +1,158 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "5b6653ec8bb19d18d1957cfc451dab24",
+    "content-hash": "40afdb90a091ad036081b982b2286909",
+    "packages": [
+        {
+            "name": "smackphp/smack-http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smackphp/smack-http-message.git",
+                "reference": "22a119e012e86739c6fd6e572c59b4b15407998f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smackphp/smack-http-message/zipball/22a119e012e86739c6fd6e572c59b4b15407998f",
+                "reference": "22a119e012e86739c6fd6e572c59b4b15407998f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Smack\\Http\\Message\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Smack\\Test\\Http\\Message\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Daniel Heath",
+                    "email": "daniel@smackphp.com"
+                }
+            ],
+            "description": "smackphp http message package",
+            "support": {
+                "source": "https://github.com/smackphp/smack-http-message/tree/master",
+                "issues": "https://github.com/smackphp/smack-http-message/issues"
+            },
+            "time": "2016-01-31 03:34:14"
+        },
+        {
+            "name": "smackphp/smack-http-middleware",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smackphp/smack-http-middleware.git",
+                "reference": "d367578443a334335b96c34499ddb18f52325d74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smackphp/smack-http-middleware/zipball/d367578443a334335b96c34499ddb18f52325d74",
+                "reference": "d367578443a334335b96c34499ddb18f52325d74",
+                "shasum": ""
+            },
+            "require": {
+                "smackphp/smack-http-message": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Smack\\Http\\Middleware\\": "src/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Daniel Heath",
+                    "email": "daniel@smackphp.com"
+                }
+            ],
+            "description": "smackphp http middleware package",
+            "support": {
+                "source": "https://github.com/smackphp/smack-http-middleware/tree/master",
+                "issues": "https://github.com/smackphp/smack-http-middleware/issues"
+            },
+            "time": "2016-01-31 03:29:17"
+        },
+        {
+            "name": "smackphp/smack-routing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smackphp/smack-routing.git",
+                "reference": "21cb0bbf90833e9917c4dce44796de8269a16efe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smackphp/smack-routing/zipball/21cb0bbf90833e9917c4dce44796de8269a16efe",
+                "reference": "21cb0bbf90833e9917c4dce44796de8269a16efe",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Smack\\Routing\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Smack\\Test\\Routing\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Daniel Heath",
+                    "email": "daniel@smackphp.com"
+                }
+            ],
+            "description": "smackphp routing package",
+            "support": {
+                "source": "https://github.com/smackphp/smack-routing/tree/master",
+                "issues": "https://github.com/smackphp/smack-routing/issues"
+            },
+            "time": "2016-01-31 02:00:07"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "smackphp/smack-http-middleware": 20,
+        "smackphp/smack-routing": 20,
+        "smackphp/smack-http-message": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,35 @@
+{
+    "name": "smackphp/smack-kernel",
+    "description": "smackphp kernel package",
+    "authors": [
+        {
+            "name": "Daniel Heath",
+            "email": "daniel@smackphp.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Smack\\Kernel\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/smackphp/smack-http-middleware"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/smackphp/smack-routing"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/smackphp/smack-http-message"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "smackphp/smack-http-middleware": "dev-master",
+        "smackphp/smack-routing": "dev-master",
+        "smackphp/smack-http-message": "dev-master",
+    }
+}
