@@ -2,8 +2,18 @@
 
 require('vendor/autoload.php');
 
-use Smack\Kernel\HttpFactory;
+use Smack\Kernel\{HttpKernel, HttpFactory};
+use Smack\Event\{Dispatcher, EventCollection};
+use Smack\Routing\Router;
 
-$request = HttpFactory::makeParsedRequest();
-$response = HttpFactory::makeResponse(200, 'hello');
-$kernel = new Smack\Kernel\HttpKernel();
+$kernel = new Smack\Kernel\HttpKernel(
+	new Router, 
+	new Dispatcher(new EventCollection)
+);
+
+$kernel->boot(
+	include_once('config/routes.php'),
+	include_once('config/events.php')
+);
+
+$kernel->run(HttpFactory::makeParsedRequest());

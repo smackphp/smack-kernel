@@ -4,9 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b6653ec8bb19d18d1957cfc451dab24",
-    "content-hash": "40afdb90a091ad036081b982b2286909",
+    "hash": "5cbd26c4ce6e02e2cc83ad8e43135ff0",
+    "content-hash": "8e4ee5fd2fe8edb865401f1f5f9ed41e",
     "packages": [
+        {
+            "name": "smackphp/smack-event",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smackphp/smack-event.git",
+                "reference": "0ca2339cb73f367fc09945d2a67ec71d6f5d1816"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smackphp/smack-event/zipball/0ca2339cb73f367fc09945d2a67ec71d6f5d1816",
+                "reference": "0ca2339cb73f367fc09945d2a67ec71d6f5d1816",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Smack\\Event\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Daniel Heath",
+                    "email": "daniel@smackphp.com"
+                }
+            ],
+            "description": "smackphp event package",
+            "support": {
+                "source": "https://github.com/smackphp/smack-event/tree/master",
+                "issues": "https://github.com/smackphp/smack-event/issues"
+            },
+            "time": "2016-02-19 23:50:57"
+        },
         {
             "name": "smackphp/smack-http-message",
             "version": "dev-master",
@@ -149,10 +182,13 @@
     "stability-flags": {
         "smackphp/smack-http-middleware": 20,
         "smackphp/smack-routing": 20,
-        "smackphp/smack-http-message": 20
+        "smackphp/smack-http-message": 20,
+        "smackphp/smack-event": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.0.0"
+    },
     "platform-dev": []
 }

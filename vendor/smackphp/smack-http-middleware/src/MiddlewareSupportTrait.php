@@ -5,7 +5,7 @@ namespace Smack\Http\Middleware;
 use \Smack\Http\Message\{
   ParsedRequestInterface,
   ResponseInterface
-}
+};
 
 trait MiddlewareSupportTrait
 {

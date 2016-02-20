@@ -139,5 +139,40 @@
             "source": "https://github.com/smackphp/smack-http-message/tree/master",
             "issues": "https://github.com/smackphp/smack-http-message/issues"
         }
+    },
+    {
+        "name": "smackphp/smack-event",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/smackphp/smack-event.git",
+            "reference": "0ca2339cb73f367fc09945d2a67ec71d6f5d1816"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/smackphp/smack-event/zipball/0ca2339cb73f367fc09945d2a67ec71d6f5d1816",
+            "reference": "0ca2339cb73f367fc09945d2a67ec71d6f5d1816",
+            "shasum": ""
+        },
+        "time": "2016-02-19 23:50:57",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Smack\\Event\\": "src/"
+            }
+        },
+        "authors": [
+            {
+                "name": "Daniel Heath",
+                "email": "daniel@smackphp.com"
+            }
+        ],
+        "description": "smackphp event package",
+        "support": {
+            "source": "https://github.com/smackphp/smack-event/tree/master",
+            "issues": "https://github.com/smackphp/smack-event/issues"
+        }
     }
 ]

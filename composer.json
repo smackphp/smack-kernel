@@ -24,6 +24,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/smackphp/smack-http-message"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/smackphp/smack-event"
         }
     ],
     "require": {
@@ -31,5 +35,11 @@
         "smackphp/smack-http-middleware": "dev-master",
         "smackphp/smack-routing": "dev-master",
         "smackphp/smack-http-message": "dev-master",
+        "smackphp/smack-event": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
     }
 }
