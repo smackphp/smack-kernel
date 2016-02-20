@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Smack\\Kernel\\": "src/"
+            "App\\": "src/app/"
         }
     },
     "repositories": [
@@ -36,10 +36,5 @@
         "smackphp/smack-routing": "dev-master",
         "smackphp/smack-http-message": "dev-master",
         "smackphp/smack-event": "dev-master"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        }
     }
 }
